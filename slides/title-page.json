@@ -1,0 +1,7 @@
+{
+  "header":"Bomb Proof. Destributed. Awesome.",
+  "body": [
+    {"k":"img","v":{"src":"basho-logo.png","class":"centered"}},
+    {"k":"p","v":"This is sample plain text content."}
+  ]
+}
