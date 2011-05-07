@@ -20,19 +20,18 @@
     <script type="text/javascript" src="modernizr.min.js"></script>
     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="sammy.js"></script>
     <script type="text/javascript" src="json2.js"></script>
     <script type="text/javascript" src="riak.js"></script>
     <script type="text/javascript" src="selusuh.js"></script>
 
     <script type="text/html" id="menu-item-tmpl">
-      <li><a href="/riak/RiakTalk/${key}">${body.header}</a></li>
+      <li><a data-key="${key}" href="#/slides/${key}">${title}</a></li>
     </script>
 
     <script type="text/html" id="slide-tmpl">
-      <h3 id="slide-heading">${body.header}<h3>
-      <div style="min-height:300px">
-        <p>${JSON.stringify(body.body)}</p>
-      <div>
+      <h3>${content.header}<h3>
+      {{html content.body}}
     </script>
   </head>
   <body>
@@ -50,17 +49,19 @@
     <div id="main" class="wrapper">
       <aside>
         <ol id="side-menu">
-          <li>Slide list goes here</li>
         </ol>
       </aside>
       <article>
-      <header id="slide-content">
+      <header>
+        <div id="slide-content">
+        <h3>Loading slides ...<h3>
+        </div>
       </header>
       </article>
     </div>
     <div id="footer-container">
       <footer class="wrapper">
-      <h3>A nice footer</h3>
+      <h3>OJ Reeves / oj@buffered.io / @TheColonial</h3>
       </footer>
     </div>
     <!--[if lt IE 7 ]>

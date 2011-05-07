@@ -209,10 +209,10 @@ if [ $count = 0 ]; then
 else
   if [ $count -gt 1 ]; then
     store_slide ${slide_uris[0]} ${slides[0]} "" "${slide_links[1]}"
+    let p=0
+    let n=0
 
-    for (( i=1; i<$count-1; i++ )); do
-      let p=$i-1
-      let n=$i+1
+    for (( i=1,p=0,n=2; i<$count-1; i++,p++,n++ )); do
       store_slide ${slide_uris[$i]} ${slides[$i]} "${slide_links[$p]}" "${slide_links[$n]}"
     done
     store_slide ${slide_uris[$i]} ${slides[$i]} "${slide_links[$p]}" ""

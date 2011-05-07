@@ -14,7 +14,9 @@ echo "Downloading jquery.min.js ..."
 curl http://code.jquery.com/jquery-$JQUERYVER.min.js > jquery.min.js
 echo "Download jQuery jquery.tmpl.min.js ..."
 curl -O http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js
-echo "Downloadling modernizr.min.js ..."
+echo "Downloading modernizr.min.js ..."
 curl -X POST http://www.modernizr.com/downloadjs/ -d "" > modernizr.min.js
+echo "Downloading sammy.js ..."
+curl https://github.com/quirkey/sammy/raw/master/lib/min/sammy-latest.min.js > sammy.js
 
 echo "Finished updating libraries."

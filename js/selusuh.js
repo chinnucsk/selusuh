@@ -1,7 +1,7 @@
-Function.prototype.bind = function(target) {
-  var func = this;
-  return function(){ return func.apply(target, arguments); };
-};
+//Function.prototype.bind = function(target) {
+//  var func = this;
+//  return function(){ return func.apply(target, arguments); };
+//};
 
 var Selusuh = function() {
   this.client = new RiakClient();
@@ -9,7 +9,7 @@ var Selusuh = function() {
   return this;
 };
 
-Selusuh.prototype.loadDeck = function(loaded) {
+Selusuh.prototype.loadDeck = function(itemLoaded, completed) {
   var self = this;
 
   this.bucket.link({tag:'start'})
@@ -17,47 +17,94 @@ Selusuh.prototype.loadDeck = function(loaded) {
         self.bucket.get('show', function(s, o, r) {
           // TODO: figure out how to get all these elements out
           // in a single map reduce job
-          self.getNextSlide(loaded, [], o, 'start');
+          self.getNextSlide(itemLoaded, completed, [], o, 'start');
         });
     });
 };
 
-Selusuh.prototype.getNextSlide = function(loaded, deck, prevObj, tag) {
+Selusuh.prototype.getLinkByTag = function(riakObj, tag) {
+  for(var i = 0; i < riakObj.links.length; ++i) {
+    if(riakObj.links[i].tag == tag) return riakObj.links[i];
+  }
+  return null;
+};
+
+Selusuh.prototype.getNextSlide = function(loaded, completed, deck, prevObj, tag) {
   var self = this;
 
-  var findLink = function(obj) {
-    for(var i = 0; i < obj.links.length; ++i) {
-      if(obj.links[i].tag == tag) return obj.links[i];
-    }
-    return null;
-  }
-
-  var next = findLink(prevObj);
+  var next = this.getLinkByTag(prevObj, tag);
 
   if(next == null) {
-    loaded(deck);
+    if(completed != null) completed(deck);
   } else {
     this.bucket.get(next.target.split("/")[3], function(s, o, r) {
-        deck.push({key:o.key,body:JSON.parse(o.body)});
-        self.getNextSlide(loaded, deck, o, 'next');
+        var content = JSON.parse(o.body);
+        var item = {key: o.key, title: content.header};
+        deck.push(item);
+        loaded(item);
+        self.getNextSlide(loaded, completed, deck, o, 'next');
      });
   }
 };
 
-Selusuh.prototype.fillMenu = function(deck) {
-  $("#side-menu").html($("#menu-item-tmpl").tmpl(deck));
+Selusuh.prototype.getSlideById = function(slideId, loaded) {
+  var self = this;
+  this.bucket.get(slideId, function(s, o, r) {
+      var key = o.key;
+      var next = self.getLinkByTag(o, 'next');
+      var prev = self.getLinkByTag(o, 'prev');
+      var content = JSON.parse(o.body);
+
+      loaded({key: key,
+        content: content,
+        prev: prev == null ? '#' : '#/slides/' + prev.target.split("/")[3],
+        next: next == null ? '#' : '#/slides/' + next.target.split("/")[3]});
+  });
 };
 
 Selusuh.prototype.applySlide = function(slide) {
   $("#slide-content").html($("#slide-tmpl").tmpl(slide));
+  $("#prev-slide").attr('href', slide.prev);
+  $("#next-slide").attr('href', slide.next);
+
+  $("#side-menu").find('a.current').removeClass('current');
+  $("#side-menu").find('a[data-key="' + slide.key + '"]').addClass('current');
 };
 
-$(document).ready(function() {
-  var selusuh = new Selusuh();
-  selusuh.loadDeck(function(deck) {
-    console.log(deck);
-    selusuh.applySlide(deck[0]);
-    selusuh.fillMenu(deck);
+Selusuh.prototype.fillSideMenu = function(context, redirect, completed) {
+  this.loadDeck(function(item) {
+    $("#menu-item-tmpl").tmpl(item).appendTo("#side-menu");
+
+    if(redirect && $("#slide-content").html() == "") {
+      context.redirect('#', 'slides', item.key);
+    }
+  }, completed);
+};
+
+(function($) {
+   var selusuh = new Selusuh();
+   var sammyApp = $.sammy("#slide-content", function() {
+      this.get('#/slides/:slide', function(context) {
+        var slideId = this.params['slide'];
+
+        var apply = function() {
+          selusuh.getSlideById(slideId, selusuh.applySlide);
+        };
+
+        if($.trim($("#side-menu").text()) != "") {
+          apply();
+        } else {
+          selusuh.fillSideMenu(context, false, apply);
+        }
+      });
+
+     this.get('#/', function(context) {
+        selusuh.fillSideMenu(context, true);
+      });
   });
-});
+
+  $(function() {
+    sammyApp.run('#/');
+  });
+})(jQuery);
 

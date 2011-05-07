@@ -1,14 +1,4 @@
 {
   "header":"Overview",
-  "body": {
-    "p":"Now we have some content",
-    "ul": {
-      "li":"part of an unordered list",
-      "li":"and again"
-    },
-    "ol": {
-      "p":"part of an ordered list",
-      "p":"and again"
-    }
-  }
+  "body":""
 }

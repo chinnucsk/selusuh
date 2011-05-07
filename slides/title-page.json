@@ -1,7 +1,4 @@
 {
   "header":"Bomb Proof. Destributed. Awesome.",
-  "body": [
-    {"k":"img","v":{"src":"basho-logo.png","class":"centered"}},
-    {"k":"p","v":"This is sample plain text content."}
-  ]
+  "body":"<p>A peek under the hood of Basho's killer NoSQL Storage solution.</p>"
 }
