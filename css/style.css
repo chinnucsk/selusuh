@@ -94,6 +94,18 @@ body{
   height: 400px;
 }
 
+#slide-content small {
+  font-size: 16px;
+}
+
+#slide-content ul, #slide-content ol {
+    margin-left: 1em;
+}
+
+#slide-content li, #slide-content p {
+	font:25px/35px Helvetica, Helvetica Neue, Arial;
+}
+
 .wrapper{
 	margin:auto;
 	width:960px;
@@ -172,7 +184,7 @@ aside a.current {
 }
 
 #main p{
-	font:20px/30px Helvetica, Helvetica Neue, Arial;
+	font:25px/35px Helvetica, Helvetica Neue, Arial;
 	width:620px;
 	text-shadow:none;
 }
@@ -207,6 +219,11 @@ article header{
 #footer-container h3{
   font-size: 30px;
   margin: 20px 0;
+}
+
+.right {
+  float:right;
+  margin:0 0 5px 5px;
 }
 
 .info{

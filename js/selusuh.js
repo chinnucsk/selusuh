@@ -99,7 +99,10 @@ Selusuh.prototype.fillSideMenu = function(context, redirect, completed) {
       });
 
      this.get('#/', function(context) {
-        selusuh.fillSideMenu(context, true);
+        $("#side-menu").html('');
+        selusuh.fillSideMenu(context, true, function(deck) {
+          selusuh.getSlideById(deck[0].key, selusuh.applySlide);
+        });
       });
   });
 

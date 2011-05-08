@@ -40,7 +40,7 @@ file_to_content_type["json"]=$TYPE_JSON
 
 declare -A content_type_to_data_flag
 content_type_to_data_flag[$TYPE_HTML]=--data-binary
-content_type_to_data_flag[$TYPE_JSON]=--data-binary
+content_type_to_data_flag[$TYPE_JSON]=-d
 content_type_to_data_flag[$TYPE_JS]=--data-binary
 content_type_to_data_flag[$TYPE_CSS]=--data-binary
 content_type_to_data_flag[$TYPE_JPG]=--data-binary

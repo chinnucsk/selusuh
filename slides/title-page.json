@@ -1,4 +1,13 @@
 {
   "header":"Bomb Proof. Destributed. Awesome.",
-  "body":"<p>A peek under the hood of Basho's killer NoSQL Storage solution.</p>"
+  "body":"<p>A peek under the hood of Basho's killer NoSQL Storage solution.</p>
+<br/>
+<img src=\"riaklogo.png\" class=\"right\" title=\"What things were like at home.\" />
+<img src=\"basho-logo.png\" class=\"right\" title=\"What things were like at home.\" />
+<br/>
+<br/>
+<br/>
+<p><small>Presentation content was not created by nor endorsed by Basho Technologies.<br/>Logos used with permission.
+</small></p>
+"
 }

@@ -1,6 +1,19 @@
 {
   "header":"Introduction",
-  "body": [
-    {"k":"p","v":"Second slide, even though the file name isn't right"}
-  ]
+  "body": "
+<p>Buzzword Bingo...<p>
+<ul>
+<li>Key-Value store</li>
+<li>Distributed<ul>
+<li>N interconnected nodes</li>
+<li>No \"master\" node</li>
+<li>Hence no single point of failure</li>
+</ul>
+<li>Fault-tolerant<ul>
+<li>Written in Erlang</li>
+<li>No single point of failure</li>
+<li>No node is more or less special than another</li>
+</ul>
+</li>
+</ul>"
 }
