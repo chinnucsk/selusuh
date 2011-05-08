@@ -63,6 +63,14 @@ Selusuh.prototype.getSlideById = function(slideId, loaded) {
 };
 
 Selusuh.prototype.applySlide = function(slide) {
+  console.log(slide.content.section);
+  console.log(slide.content.hasOwnProperty('section'));
+  console.log($.trim(slide.content.section).length);
+  $("#slide-section").text(slide.content.hasOwnProperty('section')
+      && $.trim(slide.content.section).length > 0
+        ? " - " + slide.content.section
+        : "");
+
   $("#slide-content").html($("#slide-tmpl").tmpl(slide));
   $("#prev-slide").attr('href', slide.prev);
   $("#next-slide").attr('href', slide.next);

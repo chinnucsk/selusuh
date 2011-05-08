@@ -1,11 +1,12 @@
 {
+  "section":"What is it?",
   "header":"Introduction (cont.)",
   "body": "
 <ul>
 <li>Scalable<ul>
 <li>Adding nodes is incredibly easy</li>
 </ul>
-<li>\"Operationally <strong>boring</strong><ul>
+<li>\"Operationally <strong>boring</strong>\"<ul>
 <li>Incredibly hard to break</li>
 <li>A perfect meta-storm of perfect storms is required</li>
 </ul>

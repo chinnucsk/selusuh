@@ -64,7 +64,7 @@ store()
     shift
   done
 
-  echo "Storing $file ($content_type) in $target ..."
+  echo "File $file ($content_type) -> $target"
 
   if [ "$extra" ]; then
     curl -X PUT "$target" -H "Content-type: $content_type" $data_flag @${file} "${extra[@]}" > /dev/null 2>&1
