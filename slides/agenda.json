@@ -1,4 +1,20 @@
 {
   "header":"Agenda",
-  "body":"<p>What's on ...</p><ul><li>What is it?</li><li>What features does it have?</li><li>How does it work?</li><li>What can it be used for?</li><li>Why should I use it?</li><li>How do I get started?</li></ul><p>What's <u>not</u> on ...</p><ul><li>Comparisons to other NoSQL stores</li></ul>"
+  "body":"<ul><li>What's on ...
+<ul>
+<li>What is it?</li>
+<li>What is it made of?</li>
+<li>What features does it have?</li>
+<li>How does it work?</li>
+<li>What can it be used for?</li>
+<li>Why should I use it?</li>
+<li>How do I get started?</li>
+</ul></li>
+<li>What's <u>not</u> on ...
+<ul>
+<li>Comparisons to other NoSQL stores</li>
+<li>Preaching that NoSQL is the ducks nuts</li>
+</ul>
+</li>
+</ul>"
 }

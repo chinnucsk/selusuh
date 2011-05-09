@@ -1,0 +1,18 @@
+{
+  "section":"Vector Clocks",
+  "header":"So what exactly are they?",
+  "body":"
+<ul>
+<li>Too much to cover off in this talk</li>
+<li>Lots of quality resources
+<ul>
+<li><a href=\"\" title=\"\">Vector Clocks</a> - Wikipedia</li>
+<li><a href=\"\" title=\"\">Vector Clocks</a> - Basho</li>
+<li><a href=\"\" title=\"\">Why Vector Clocks are Easy</a> - Basho</li>
+<li><a href=\"\" title=\"\">Why Vector Clocks are Hard</a> - Basho</li>
+</ul></li>
+</ul>
+<br/>
+<p>In short, they help keep shit in synch and help us figure out what shit clashes.</p>
+"
+}

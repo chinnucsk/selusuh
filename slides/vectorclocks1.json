@@ -1,0 +1,27 @@
+{
+  "section":"Vector Clocks",
+  "header":"Vector Clocks - why?",
+  "body":"
+<ul>
+<li>Any node can handle a request</li>
+<li>Not all nodes need to participate in a request</li>
+<li>So how do we know which value is current?</li>
+<li><strong><a href=\"#vector-clocks-inline\" rel=\"colorbox\" title=\"Vector Clocks - courtesy of Wikipedia\">Vector Clocks</strong></a> (vclocks) help out here
+<ul>
+<li>When storing a value it's tagged with a vclock</li>
+<li>Each update to the value results in a new vclock (extended from the previous)</li>
+<li>Comparing vclocks let's us determine whether
+<ul>
+<li>one object is descended from another</li>
+<li>objects are descended from a common parent</li>
+<li>objects are unrelated in recent heritage</li>
+</ul></li>
+</ul></li>
+</ul>
+<div style=\"display:none;\">
+<div id=\"vector-clocks-inline\" class=\"popup\">
+<strong>Vector clocks</strong> is an algorithm for generating a partial ordering of events in a distributed system and detecting causality violations. Just as in Lamport timestamps, interprocess messages contain the state of the sending process's logical clock. A vector clock of a system of <em>N</em> processes is an array/vector of <em>N</em> logical clocks, one clock per process; a local \"smallest possible values\" copy of the global clock-array is kept in each process...
+</div>
+</div>
+"
+}

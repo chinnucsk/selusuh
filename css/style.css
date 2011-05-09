@@ -106,12 +106,17 @@ article h2, article h3 {
   font-size: 16px;
 }
 
-#slide-content ul, #slide-content ol {
-    margin: 0em 0em 1em 2em;
+#slide-content li {
+	font:23px/33px Helvetica, Helvetica Neue, Arial;
 }
 
-#slide-content li, #slide-content p {
-	font:25px/35px Helvetica, Helvetica Neue, Arial;
+div.popup em, #slide-content em {
+  font-style: italic;
+}
+
+div.popup {
+  padding:5px;
+  font-size: 24px;
 }
 
 .wrapper{

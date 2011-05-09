@@ -1,0 +1,20 @@
+{
+  "section":"What features does it have?",
+  "header":"Killer Features",
+  "body": "
+<ul>
+<li>Schemaless</li>
+<li>Stores any kind of data</li>
+<li>REST & PBC interfaces</li>
+<li>Map/reduce</li>
+<li>Link walking</li>
+<li>Web apps (more on this later)</li>
+</ul>
+<br/>
+<p>Cool, but not covered here...</p>
+<ul>
+<li>Riak Search - full-text searching</li>
+<li>Luwak - large object storage</li>
+</ul>
+"
+}

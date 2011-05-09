@@ -1,5 +1,14 @@
 {
-  "header":"A few questions",
-  "body": "<ul><li>Any Riak Users?</li><li>Anyone know Riak at all?</li><li>Any other NoSQL users?</li><li>Ask questions as we go!</li></ul>"
+  "header":"Out of interest ...",
+  "body": "<ul><li>Any Riak Users?</li><li>Anyone know Riak at all?</li>
+<li>Any other NoSQL users?</li>
+<li>Anyone evaluating NoSQL options?</li>
+<li>Ask questions as we go!</li>
+</ul>
+<br/>
+<br/>
+<br/>
+<p>Be prepared to <a href=\"fault-tolerance.png\" rel=\"colorbox\" title=\"'Fault Tolerance' - courtesy of @jrecursive\">go f**k yourselves</a>!</p>
+"
 }
 

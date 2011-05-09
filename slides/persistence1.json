@@ -1,0 +1,17 @@
+{
+  "section":"Persistence",
+  "header":"Pluggable backends",
+  "body":"
+<ul>
+<li>Different backends can be chosen <strong>per bucket</strong>!</li>
+<li>Default backend is <strong>Bitcask</strong>
+<ul>
+<li>KV storage engine by Basho specially for Riak</li>
+<li>Amazingly quick</li>
+<li>Mixture of Erlang and C</li>
+</ul>
+<li>Other options are:<br/>ets, dets, fs, innostore, gb_trees and more</li>
+<li>Easy to build your own and plug it in (if that's your thing)</li>
+</ul>
+"
+}

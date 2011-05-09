@@ -1,0 +1,13 @@
+{
+  "section":"How and where is data stored?",
+  "header":"The Ring",
+  "body":"
+<ul>
+<li><strong>The Ring</strong> is a 2<sup>160</sup> (ie. 160bit) integer space</li>
+<li>Divided into partitions of equal size</li>
+<li>Virtual-nodes, or <strong>vnodes</strong>, claim a partition on the ring.
+<li>A cluster of vnodes live in a single Riak node (usually a physical node with a Riak instance running)</li>
+<li>Each node has the same number of vnodes and hence the same number of partitions</li>
+<li><a href=\"riak-ring.png\" rel=\"colorbox\" title=\"The Ring - Image courtesy of Basho Technologies\">This</a> is what it looks like</li>
+</ul>"
+}

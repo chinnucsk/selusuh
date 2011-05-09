@@ -4,3 +4,12 @@ before-we-begin.json
 quick-questions.json
 introduction1.json
 introduction2.json
+features1.json
+dynamo1.json
+ring1.json
+ring2.json
+failures1.json
+persistence1.json
+vectorclocks1.json
+vectorclocks2.json
+clients1.json

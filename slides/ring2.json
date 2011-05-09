@@ -1,0 +1,12 @@
+{
+  "section":"How and where is data stored?",
+  "header":"The Ring (cont.)",
+  "body":"
+<ul>
+<li>Data is stored in The Ring by hashing bucket & key values to determine the partition to write to</li>
+<li>Data is written to multiple partitions based on the <strong>N</strong> value</li>
+<li><strong>N</strong> has a per-node default value, but can be changed and even configured per bucket!</li>
+<li><a href=\"riak-data-distribution.png\" rel=\"colorbox\" title=\"Data Distribution - Image courtesy of Basho Technologies\">This</a> is how data is replicated (N)</li>
+</ul>"
+}
+

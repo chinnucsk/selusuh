@@ -1,0 +1,19 @@
+{
+  "section":"Node movement?",
+  "header":"What if a node is added or removed?",
+  "body":"
+<ul>
+<li><strong><a href=\"#consistent-hashing-inline\" rel=\"colorbox\" title=\"Definition courtesy of Wikipedia\">Consistent Hashing</a></strong> is used to limit the effects of keys being reshuffled too much when nodes are added/removed (ie. The Ring is modified)</li>
+<li>Node failures are managed using a technique called <strong>Hinted Handoff</strong></li>
+<li>If a node dies for some reason, neighbouring nodes pick up the pieces temporarily</li>
+<li>This is part of what makes Riak so resilient - node failures are not noticable to users</li>
+<li>Ring state and bucket properties (along with changes) are propogated via a <strong>gossip protocol</strong></li>
+</ul>
+<div style=\"display:none;\">
+<div id=\"consistent-hashing-inline\" class=\"popup\">
+<strong>Consistent hashing</strong> is a scheme that provides hash table functionality in a way that the addition or removal of one slot does not significantly change the mapping of keys to slots. In contrast, in most traditional hash tables, a change in the number of array slots causes nearly all keys to be remapped. By using consistent hashing, only <strong>K / n</strong> keys need to be remapped on average, where <em>K</em> is the number of keys, and <em>n</em> is the number of slots.
+</div>
+</div>
+"
+}
+

@@ -1,0 +1,24 @@
+{
+  "section":"Clients",
+  "header":"Multiple clients already available",
+  "body":"
+<ul>
+<li>REST - use your browser, cURL or language-specific http library</li>
+<li>PBC - well documented interface, faster than using REST</li>
+<li>REST and PBC not at feature parity</li>
+<li>Existing language-specific clients
+<ul>
+<li>Erlang - PBC and REST</li>
+<li>Java - PBC and REST</li>
+<li>PHP - REST</li>
+<li>Javascript - REST</li>
+<li>Ruby - REST and PBC</li>
+<li>Node.js - REST</li>
+</ul></li>
+<li>Other non-official clients<ul>
+<li>.NET - REST and PBC (currently working on this)</li>
+<li>C++ (I think!) - PBC</li>
+</ul>
+"
+}
+

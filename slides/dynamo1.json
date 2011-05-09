@@ -1,0 +1,14 @@
+{
+  "section":"What is it?",
+  "header":"Design",
+  "body": "
+<ul>
+<li>Based on Amazon's <a href=\"http://www.allthingsdistributed.com/2007/10/amazons_dynamo.html\">Dynamo</a> (<a href=\"http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf\">PDF</a>)
+</li>
+<li>\"Eventually Consistent\" - tunable by <a href=\"nosql.png\" rel=\"colorbox\" title=\"I Visual Guide to NoSQL Databases - Courtesy of Nathan Hurst\">CAP</a> properties (NRW)</li>
+<li>Consistency is still <em>very</em> quick (don't be scared, you're probably already using eventual consistency!)</li>
+<li>\"Buckets\" and \"Keys\"</li>
+<li>\"Links\"</li>
+<li>Pre- and Post-commit Hooks</li>
+</ul>"
+}
