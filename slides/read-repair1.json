@@ -1,0 +1,25 @@
+{
+  "section":"How does it work?",
+  "header":"Read Repair",
+  "body": "
+<ul>
+<li>Sometimes a read can return as successful -- ie the <a href=\"#quorum-inline\" rel=\"colorbox\" title=\"Quorum Definition\">quorum</a> was met -- but nodes from which data was requested return different results</li>
+<li>Disagreement on content across nodes can happen because either ...<ol>
+<li>... the node doesn't have a copy (returned <em>not found</em>)</li>
+<li>... the node returned a <strong>vclock</strong> that is an ancestor of the vclock of the successful read</li>
+</ol></li>
+<li>In this scenario, Riak forces nodes with incorrect values to update themselves with the correct values -- this is what <strong>read repair</strong> is</li>
+</ul>
+<div style=\"display:none\">
+<div id=\"quorum-inline\" class=\"popup\">
+<p>In Riak <strong>quorum</strong> can mean two things:</p>
+<ol>
+<li>The quantity of nodes that <em>must</em> respond with success for a read or write to be successful</li>
+<li>A symbolic quantity for item 1, calculated via <strong>n_val / 2 + 1</strong> (n_val is the <strong>N</strong> Dynamo parameter)</li>
+</ol>
+<p>With Riak's default <strong>n_val</strong> the value of <strong>3</strong> for item 2 in the above list is <strong>2</strong>
+</div>
+</div>
+"
+}
+

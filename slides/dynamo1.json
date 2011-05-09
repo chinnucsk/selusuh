@@ -1,14 +1,40 @@
 {
-  "section":"What is it?",
+  "section":"How does it work?",
   "header":"Design",
   "body": "
 <ul>
-<li>Based on Amazon's <a href=\"http://www.allthingsdistributed.com/2007/10/amazons_dynamo.html\">Dynamo</a> (<a href=\"http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf\">PDF</a>)
-</li>
-<li>\"Eventually Consistent\" - tunable by <a href=\"nosql.png\" rel=\"colorbox\" title=\"I Visual Guide to NoSQL Databases - Courtesy of Nathan Hurst\">CAP</a> properties (NRW)</li>
+<li>Based on Amazon's <a href=\"http://www.allthingsdistributed.com/2007/10/amazons_dynamo.html\">Dynamo</a> (<a href=\"http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf\">PDF</a>)</li>
+<li>Tunable <a href=\"#nrw-inline\" rel=\"colorbox\" title=\"NRW properties\">NRW</a> (Dynamo) properties <em>per operation</em></li>
+<li>\"Eventually Consistent\" - with respect to the <a href=\"#cap-inline\" rel=\"colorbox\" title=\"The CAP Theorm\">CAP theorem</a> (focuses on AP)</li>
+<li>Where does Riak sit with respect to other NoSQL DBs? Let's <a href=\"nosql.png\" rel=\"colorbox\" title=\"I Visual Guide to NoSQL Databases - Courtesy of Nathan Hurst\">see</a></li>
 <li>Consistency is still <em>very</em> quick (don't be scared, you're probably already using eventual consistency!)</li>
-<li>\"Buckets\" and \"Keys\"</li>
-<li>\"Links\"</li>
+<li>\"Buckets\" and \"Keys\"<ul>
+<li>think \"Tables\" and \"Primary keys\" in RDBMS.. kinda.. sorta</li></ul></li>
+<li>\"Links\"<ul>
+<li>think \"Foreign keys\" in RDBS... well, not <em>really</em></ul></li>
 <li>Pre- and Post-commit Hooks</li>
-</ul>"
+</ul>
+<div style=\"display:none;\">
+<div id=\"cap-inline\" class=\"popup\">
+<ul>
+<li><u><strong>C</strong>onsistency</u> - Reads and writes reflect a state that it is globally consistent across the cluster</li>
+<li><u><strong>A</strong>vailability</u> - The system is avialable for reads and writes</li>
+<li><u><strong>P</strong>artition (fault) tolerance</u> - The system is able to function even when parts of it are have failed</li>
+</ul>
+</div>
+<div id=\"nrw-inline\" class=\"popup\">
+<ul><li>The parameters...
+<ul><li><strong>N</strong> - The number of \"replicas\", ie. nodes to replicate data across</li>
+<li><strong>R</strong> - The number of nodes which need to respond with \"success\" for a <em>read</em> to be considered successful</li>
+<li><strong>W</strong> - The number of nodes which need to respond with \"success\" for a <em>write</em> to be considered successful</li></ul></li>
+<li>The math...
+<ul>
+<li><strong>N - R</strong> = Read fault tolerance
+<li><strong>N - W</strong> = Write fault tolerance
+</ul></li></ul>
+<br/>
+<p>If <strong>N=5,W=3,R=1</strong> then <em>2</em> nodes can be down while writes still succeed, and <em>4</em> nodes can be down while reads still succeed.</p>
+</div>
+</div>
+"
 }

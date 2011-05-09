@@ -1,0 +1,19 @@
+{
+  "section":"How does it work?",
+  "header":"Riak Core",
+  "body": "
+<ul>
+<li>The magic component that makes it easy to build well-behaved distributed applications</li>
+<li>Is a single Erlang/OTP application which can easily be included in your Erlang app</li>
+<li>Node management
+<ul>
+<li>Tracks node statuses in the cluster</li>
+<li>Can programmatically remove nodes from the cluster</li>
+<li>API for advertising and locating services around the cluster (handy for finding \"special\" nodes)</li>
+<li>Generates events based on node activity</li>
+</ul>
+</li>
+</ul>
+"
+}
+

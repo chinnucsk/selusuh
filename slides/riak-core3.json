@@ -1,0 +1,17 @@
+{
+  "section":"How does it work?",
+  "header":"Riak Core (cont.)",
+  "body": "
+<ul>
+<li>Cluster state
+<ul>
+<li>The data that's stored in The Ring (coming up shortly) is the global state of the system</li>
+<li>Management/synching of this state across the nodes is handled by <code>riak_core</code> using a \"gossip protocol\"</li>
+</ul>
+</li>
+</ul>
+<br/>
+<p>Using Riak Core for your distributed apps means that anything above or below the Riak Core application can be agnostic of scale!</p>
+"
+}
+

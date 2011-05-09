@@ -6,14 +6,12 @@
 <ul>
 <li>Key-Value store</li>
 <li>Distributed<ul>
-<li>N interconnected nodes</li>
+<li>Many interconnected nodes</li>
 <li>Therefore redundant (configurable)</li>
-<li>No \"master\" node</li>
-<li>Hence no single point of failure</li>
 </ul>
 <li>Fault-tolerant<ul>
 <li>Written in Erlang (with some bits in C)</li>
-<li>No single point of failure (all nodes are equal)</li>
+<li>No single point of failure (no master node, all nodes are equal)</li>
 </ul>
 </li>
 </ul>"

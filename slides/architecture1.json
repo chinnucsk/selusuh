@@ -1,0 +1,49 @@
+{
+  "section":"How does it work?",
+  "header":"Component Architecture",
+  "body": "
+<style>
+div.stack {
+text-align:center;
+font-size:20px;
+}
+div.stack table {
+margin-left:auto;
+margin-right:auto;
+}
+div.stack td {
+border: 1px solid black;
+padding: 10px;
+margin:10px;
+background-color: silver;
+}
+</style>
+<div class=\"stack\">
+<table>
+<tbody>
+<tr>
+<td width=\"50%\">HTTP</td><td width=\"50%\">Protocol buffers</td>
+</tr>
+<tr>
+<td colspan=\"2\">Erlang Client</td>
+</tr>
+<tr>
+<td colspan=\"2\">Request FSMs</td>
+</tr>
+<tr>
+<td colspan=\"2\">Riak Core</td>
+</tr>
+<tr>
+<td colspan=\"2\">vnode master</td>
+</tr>
+<tr>
+<td colspan=\"2\">vnode</td>
+</tr>
+<tr>
+<td colspan=\"2\">Storage backend</td>
+</tr>
+</tbody>
+</table>
+</div>
+"
+}

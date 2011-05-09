@@ -15,9 +15,8 @@
 <li>Ruby - REST and PBC</li>
 <li>Node.js - REST</li>
 </ul></li>
-<li>Other non-official clients<ul>
-<li>.NET - REST and PBC (currently working on this)</li>
-<li>C++ (I think!) - PBC</li>
+<li>There are many other non-official clients<ul>
+<li>I'm currently working on a .NET PBC Client</li>
 </ul>
 "
 }

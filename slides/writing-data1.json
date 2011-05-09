@@ -1,0 +1,28 @@
+{
+  "section":"Talking to Riak",
+  "header":"Writing Data",
+  "body": "
+<p><code>curl -v -X PUT http://127.0.0.1:8098/riak/soldiers/blackadder -H \"Content-type: text/plain\" -d \"Captain Blackadder\"</code></p>
+<pre>
+* About to connect() to 127.0.0.1 port 8098 (#0)
+*   Trying 127.0.0.1... connected
+* Connected to 127.0.0.1 (127.0.0.1) port 8098 (#0)
+> PUT /riak/soldiers/blackadder HTTP/1.1
+> User-Agent: curl/7.19.5 (x86_64-pc-linux-gnu) libcurl/7.19.5 OpenSSL/0.9.8g zlib/1.2.3.3 libidn/1.15
+> Host: 127.0.0.1:8098
+> Accept: */*
+> Content-type: text/plain
+> Content-Length: 18
+> 
+< HTTP/1.1 204 No Content
+< Vary: Accept-Encoding
+< Server: MochiWeb/1.1 WebMachine/1.7.3 (participate in the frantic)
+< Date: Mon, 09 May 2011 13:11:38 GMT
+< Content-Type: text/plain
+< Content-Length: 0
+< 
+* Connection #0 to host 127.0.0.1 left intact
+* Closing connection #0
+</pre>
+"}
+

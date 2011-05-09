@@ -88,11 +88,18 @@ Selusuh.prototype.applySlide = function(slide) {
   $("#side-menu").find('a[data-key="' + slide.key + '"]').addClass('current');
 
   $("#slide-content a[rel='colorbox']").each(function() {
+      var props = {
+          speed:500,
+          maxWidth:"800px",
+          maxHeight:"95%",
+          scalePhotos:true
+      };
+
       if($(this).attr('href')[0] == '#') {
-        $(this).colorbox({speed:500,maxWidth:"800px",scalePhotos:true,inline:true,href:$(this).attr('href')});
-      } else {
-        $(this).colorbox({speed:500,maxWidth:"800px",scalePhotos:true});
+          props.inline = true;
+          props.href = $(this).attr('href');
       }
+      $(this).colorbox(props);
   });
 };
 

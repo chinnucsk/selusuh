@@ -1,0 +1,19 @@
+{
+  "section":"How does it work?",
+  "header":"Riak Core (cont.)",
+  "body": "
+<ul>
+<li>Partitioning and work distribution
+<ul>
+<li>Master/worker configuration on each node to manage execution work units</li>
+<li>Consistent hashing determines the nodes to do the work while the master process on the target nodes gives work to the workers</li>
+<li>API for advertising and locating services around the cluster (handy for finding \"special\" nodes)</li>
+<li>Deals with Hinted Handoff</li>
+<li>Implementing a custom vnode is as \"simple\" as creating an Erlang module which implements the <code>riak_core_vnode</code> behaviour</li>
+</ul>
+</li>
+</ul>
+"
+}
+
+
