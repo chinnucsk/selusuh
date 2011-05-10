@@ -85,7 +85,9 @@ Selusuh.prototype.applySlide = function(slide) {
   }
 
   $("#side-menu").find('a.current').removeClass('current');
-  $("#side-menu").find('a[data-key="' + slide.key + '"]').addClass('current');
+  var menuItem = $("#side-menu").find('a[data-key="' + slide.key + '"]');
+  menuItem.addClass('current');
+  menuItem.scrollintoview({duration:'fast'});
 
   $("#slide-content a[rel='colorbox']").each(function() {
       var props = {

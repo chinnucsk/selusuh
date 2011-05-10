@@ -1,0 +1,14 @@
+{
+  "section":"Gotchas",
+  "header":"Things to look out for",
+  "body": "
+<ul>
+<li>Listing keys in a bucket is expensive<ul>
+<li>Do this only if absolutely necessary</li>
+<li>If common, use something else to store a key index (eg. Redis)</li>
+</li></ul>
+<li>M/R job with bucket name as input == M/R over the whole bucket == list keys!</li>
+</ul>
+"}
+
+

@@ -1,0 +1,15 @@
+{
+  "section":"Querying Data",
+  "header":"Map Reduce Structure",
+  "body": "
+<ul>
+<li>Exact syntax varies depending on client -- we'll focus on REST</li>
+<li>Data being queried needs to be in a format which can be processed with JS (JSON is best)</li>
+<li>Issued via <strong>POST</strong> to <code>/mapred</code></li>
+<li>M/R jobs via REST have to be JSON (Content-type: application/json)</li>
+<li>Takes the form:<br/>
+<code>{\"inputs\":[...],\"query\":[...],\"timeout\":XXXX}</code><ul>
+<li><strong>timeout</strong> - milliseconds (defaults to 60000)</li></ul></li>
+</ul>
+"}
+

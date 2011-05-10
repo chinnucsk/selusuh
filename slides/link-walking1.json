@@ -2,4 +2,14 @@
   "section":"Talking to Riak",
   "header":"Link Walking",
   "body": "
+<ul>
+<li>Add parameters to URI in the form:<br/>
+<code>/{bucket},{tag},{keep}/
+<ul>
+<li><strong>bucket</strong> - the name of the bucket to link to, or '<strong>_</strong>' (any)</li>
+<li><strong>tag</strong> - the name of the link tag to walk, or '<strong>_</strong>' (any)</li>
+<li><strong>keep</strong> - specifies whether to return a result for this link phase, or '<strong>_</strong>' (0)</li>
+</ul>
+<br/>
+<p>Time to hit the console for a brief demo...</p>
 "}

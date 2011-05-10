@@ -1,0 +1,14 @@
+{
+  "section":"More information",
+  "header":"Resources to get going",
+  "body": "
+<ul>
+<li><a href=\"http://riak.basho.com/\">http://riak.basho.com/</a> - best starting point</li>
+<li><a href=\"http://lists.basho.com/mailman/listinfo/riak-users_lists.basho.com\">Mailing list</a></li>
+<li>#riak channel on irc.freenode.net - great community</li>
+<li>Lots of blog posts - Google 'Riak'</li>
+<li>Twitter with the #riak hashtag (follow @basho et al)</li>
+</ul>
+"
+}
+

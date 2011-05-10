@@ -38,7 +38,7 @@ input, select { vertical-align: middle; }
 
 body { font:13px/1.231 sans-serif; *font-size:small; } 
 select, input, textarea, button { font:99% sans-serif; }
-pre, code, kbd, samp { font-family: monospace, sans-serif; }
+pre, code, kbd, samp { font-family: consolas, courier, monospace, sans-serif; color: black;}
 
 html { overflow-y: scroll; }
 a:hover, a:active { outline: none; }

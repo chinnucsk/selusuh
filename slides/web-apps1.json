@@ -1,0 +1,20 @@
+{
+  "section":"Sample Applications",
+  "header":"Selusuh - this slide deck app",
+  "body": "
+<ul>
+<li>HTML</li>
+<li>jQuery & plugins (scrolltoview, colorbox)</li>
+<li>Sammy.js</li>
+<li>Initializr</li>
+<li>json2.js</li>
+<li>riak.js (GET and Link walking)</li>
+<li>All served from Riak itself!</li>
+</ul>
+<p>Also</p>
+<ul>
+<li><a href=\"/riak/rekon/go\" target=\"_new\">rekon</a> by @adamachine</li>
+<li><a href=\"/riak/yak/index.html\" target=\"_new\">YakRiak</a> by @seancribbs</li>
+</ul>
+"
+}

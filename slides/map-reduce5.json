@@ -1,0 +1,17 @@
+{
+  "section":"Querying Data",
+  "header":"Map Query",
+  "body": "
+<ul>
+<li>Given as a list of \"phases\" in the form:<br/>
+<code>{\"phasetype\":{...spec...}}</code> where<ul>
+<li><code>\"phasetype\"</code> can be <code>\"map\"</code>, <code>\"reduce\"</code> or <code>\"link\"</code></li>
+<li>Each <code>spec</code> can include a <code>\"keep\"</code> value (boolean), indicates if data from the phase should be returned</li>
+</ul></li>
+<li><code>\"map\"</code> and <code>\"reduce\"</code> phases share the same format but<ul>
+<li>Map phases extract, parse and process data one key at a time</li>
+<li>Reduce phases aggregate the work done on the set of inputs</li>
+</ul>
+"}
+
+

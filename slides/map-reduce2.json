@@ -1,0 +1,12 @@
+{
+  "section":"Querying Data",
+  "header":"Map Reduce (cont.)",
+  "body": "
+<ul>
+<li>Map - execute a function over a set of data</li>
+<li>Reduce - take the results of the map phase and combine them into a single result</li>
+<li>Any node can coordinate the M/R job and send map-step eval requests to nodes where the data lives</li>
+<li>Reduce steps are done on the coordinating node</li>
+<li>Ubiquitous example: word counts</li>
+</ul>
+"}

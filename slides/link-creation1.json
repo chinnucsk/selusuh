@@ -6,7 +6,8 @@
 <li>Links let us form loose relationships between entities</li>
 <li>We can \"walk links\" to easily access related information without having to build composite keys</li>
 <li><code>Blackadder</code> is superior to <code>Lt. George</code>, who is in turn superior to <code>Pvt. Baldrick</code></li>
-<li>Simply <strong>PUT</strong> the entity with the specially formatted <em>Link</em> header.
+<li>Simply <strong>PUT</strong> the entity with the specially formatted <em>Link</em> header:<br/>
+<code>&lt;/riak/{bucket}/{key}&gt;; riaktag=\"{tag}\"</code>
 <li>We'll use verbose logging so we can see everything that's going on</li>
 </ul>
 <p>The commands look like <a href=\"#command-inline\" rel=\"colorbox\" title=\"The cURL command\">this</a>, and the result looks like <a href=\"#result-inline\" rel=\"colorbox\" title=\"The cURL result\">this</a>.</p>

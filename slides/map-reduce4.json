@@ -1,0 +1,15 @@
+{
+  "section":"Querying Data",
+  "header":"Map Inputs",
+  "body": "
+<ul>
+<li>Can be given in the following forms:<ul>
+<li><code>\"bucket\"</code> - map over all keys in the bucket</li>
+<li><code>[{\"b1\",\"k1\"},{\"b2\",\"k2\"},...]</code> - map over each bucket/key specified</li>
+<li><code>[{\"b1\",\"k1\",\"data1\"},...]</code> - map over each bucket/key/data specified</li>
+</ul></li>
+<li>Common to see just a bucket specified, which lists keys in the bucket (expensive)</li>
+</ul>
+"}
+
+

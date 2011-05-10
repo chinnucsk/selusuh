@@ -1,0 +1,27 @@
+{
+  "section":"Querying Data",
+  "header":"Phase Functions",
+  "body": "
+<ul>
+<li>The functions are arity 3:<ul>
+<li>Value - pulled out of the store</li>
+<li>KeyData - passed in as an input</li>
+<li>Arg - a static argument used across the whole phase</li></ul></li>
+<li>Simple examples <small>(lifted from Basho's wiki)</small>:<ul>
+<li><a href=\"#simple-return-inline\" rel=\"colorbox\" title=\"Return the loaded value\">Inline JS - Return the loaded value</a></li>
+<li><a href=\"#simple-js-resource-inline\" rel=\"colorbox\" title=\"Exec from JS resource\">Execute a map function located in the given URI</a></li>
+</ul></li>
+<li>Built-in functions to help handle data (eg. <code>Riak.mapValuesJson()</code>)</li>
+<li>Can also call Erlang module functions too</li>
+<li>Let's hit the console again for a demo ...</li>
+</ul>
+
+<div style=\"display:none\">
+<div id=\"simple-return-inline\" class=\"popup\">
+<p><code>// This returns the entire Riak object (not just its value)<br/>{\"map\":{\"language\":\"javascript\", \"source\":\"function(v) { return [v]; }\", \"keep\":true}}</code></p>
+</div>
+<div id=\"simple-js-resource-inline\" class=\"popup\">
+<p><code>{\"map\":{\"language\":\"javascript\", \"bucket\":\"myjs\", \"key\":\"mymap\", \"keep\":false}}</code></p>
+</div>
+</div>
+"}

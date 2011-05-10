@@ -7,14 +7,15 @@
 <li>Stores any kind of data</li>
 <li>Extremely configurable</li>
 <li>REST & PBC interfaces</li>
-<li>Map/reduce</li>
 <li>Link walking</li>
+<li>Map/reduce</li>
 <li>Web apps</li>
 <li><strong>Open source</strong> (with a paid Enterprise version)</li>
 </ul>
 <br/>
 <p>Cool, but not covered here...</p>
 <ul>
+<li>Streaming Map/reduce</li>
 <li>Riak Search - full-text searching</li>
 <li>Luwak - large object storage</li>
 </ul>

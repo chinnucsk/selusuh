@@ -1,0 +1,16 @@
+{
+  "section":"Querying Data",
+  "header":"Map Reduce",
+  "body": "
+<ul>
+<li>Most KV stores have little to no functionality beyond storage and retrieval via keys</li>
+<li>M/R extends the functionality of Riak so that data can be queried in a more powerful way</li>
+<li>Why M/R?<ul>
+<li>M/R is about moving the computation to the data</li>
+<li>Suits Riak!</li>
+<li>Parallelism / concurrent Map phase</li>
+<li>Eric Meijer - \"The math says it has to be that way!\" (YOW Conf 2010)</li>
+</ul></li>
+</ul>
+"}
+
