@@ -19,5 +19,8 @@ vectorclocks2.json
 read-repair1.json
 rest-api-overview1.json
 writing-data1.json
+writing-data2.json
+reading-data1.json
+link-creation1.json
 link-walking1.json
 clients1.json

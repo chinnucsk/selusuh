@@ -90,7 +90,7 @@ Selusuh.prototype.applySlide = function(slide) {
   $("#slide-content a[rel='colorbox']").each(function() {
       var props = {
           speed:500,
-          maxWidth:"800px",
+          maxWidth:"900px",
           maxHeight:"95%",
           scalePhotos:true
       };

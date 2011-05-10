@@ -1,0 +1,41 @@
+{
+  "section":"Talking to Riak",
+  "header":"Writing Data - POST",
+  "body": "
+<ul>
+<li>We want to store the value <code>Private Bob Down</code> into the <code>soldiers</code> bucket, but let Riak generate the key</li>
+<li>The value is plain text so we need to set the <code>Content-type</code> header to <code>text/plain</code></li>
+<li>We'll use verbose logging so we can see everything that's going on</li>
+</ul>
+<br/>
+<p>The command looks like <a href=\"#command-inline\" rel=\"colorbox\" title=\"The cURL command\">this</a>, and the result looks like <a href=\"#result-inline\" rel=\"colorbox\" title=\"The cURL result\">this</a>.</p>
+<div style=\"display:none\">
+<div id=\"command-inline\" class=\"popup\">
+<code>curl -v -X POST http://127.0.0.1:8092/riak/soldiers/ -H \"Content-type: text/plain\" -d \"Private Bob Down\"</code>
+</div>
+<div id=\"result-inline\" class=\"popup\">
+<code>
+* About to connect() to 127.0.0.1 port 8092 (#0)<br/>
+*   Trying 127.0.0.1... connected<br/>
+* Connected to 127.0.0.1 (127.0.0.1) port 8092 (#0)<br/>
+> POST /riak/soldiers/ HTTP/1.1<br/>
+> User-Agent: curl/7.19.5 (x86_64-pc-linux-gnu) libcurl/7.19.5 OpenSSL/0.9.8g zlib/1.2.3.3 libidn/1.15<br/>
+> Host: 127.0.0.1:8092<br/>
+> Accept: */*<br/>
+> Content-type: text/plain<br/>
+> Content-Length: 9<br/>
+> <br/>
+< HTTP/1.1 201 Created<br/>
+< Vary: Accept-Encoding<br/>
+< Server: MochiWeb/1.1 WebMachine/1.7.3 (participate in the frantic)<br/>
+< <strong>Location: /riak/soldiers/RqwGJrFJXSoWLiRQWUvUOChsmGt</strong><br/>
+< Date: Tue, 10 May 2011 10:21:10 GMT<br/>
+< Content-Type: application/json<br/>
+< Content-Length: 0<br/>
+< <br/>
+* Connection #0 to host 127.0.0.1 left intact<br/>
+* Closing connection #0
+</code>
+</div>
+</div>
+"}

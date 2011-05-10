@@ -1,28 +1,41 @@
 {
   "section":"Talking to Riak",
-  "header":"Writing Data",
+  "header":"Writing Data - PUT",
   "body": "
-<p><code>curl -v -X PUT http://127.0.0.1:8098/riak/soldiers/blackadder -H \"Content-type: text/plain\" -d \"Captain Blackadder\"</code></p>
-<pre>
-* About to connect() to 127.0.0.1 port 8098 (#0)
-*   Trying 127.0.0.1... connected
-* Connected to 127.0.0.1 (127.0.0.1) port 8098 (#0)
-> PUT /riak/soldiers/blackadder HTTP/1.1
-> User-Agent: curl/7.19.5 (x86_64-pc-linux-gnu) libcurl/7.19.5 OpenSSL/0.9.8g zlib/1.2.3.3 libidn/1.15
-> Host: 127.0.0.1:8098
-> Accept: */*
-> Content-type: text/plain
-> Content-Length: 18
-> 
-< HTTP/1.1 204 No Content
-< Vary: Accept-Encoding
-< Server: MochiWeb/1.1 WebMachine/1.7.3 (participate in the frantic)
-< Date: Mon, 09 May 2011 13:11:38 GMT
-< Content-Type: text/plain
-< Content-Length: 0
-< 
-* Connection #0 to host 127.0.0.1 left intact
-* Closing connection #0
-</pre>
+<ul>
+<li>We want to store the value <code>Captain Edmund Blackadder</code> into the <code>soldiers</code> bucket using the key <code>blackadder</code></li>
+<li>The value is plain text so we need to set the <code>Content-type</code> header to <code>text/plain</code></li>
+<li>We'll use verbose logging so we can see everything that's going on</li>
+</ul>
+<br/>
+<p>The command looks like <a href=\"#command-inline\" rel=\"colorbox\" title=\"The cURL command\">this</a>, and the result looks like <a href=\"#result-inline\" rel=\"colorbox\" title=\"The cURL result\">this</a>.</p>
+<div style=\"display:none\">
+<div id=\"command-inline\" class=\"popup\">
+<code>curl -v -X PUT http://127.0.0.1:8091/riak/soldiers/blackadder -H \"Content-type: text/plain\" -d \"Captain Blackadder\"</code>
+</div>
+<div id=\"result-inline\" class=\"popup\">
+<code>
+* About to connect() to 127.0.0.1 port 8091 (#0)</br>
+*   Trying 127.0.0.1... connected</br>
+* Connected to 127.0.0.1 (127.0.0.1) port 8091 (#0)</br>
+> PUT /riak/soldiers/blackadder HTTP/1.1</br>
+> User-Agent: curl/7.19.5 (x86_64-pc-linux-gnu) libcurl/7.19.5 OpenSSL/0.9.8g zlib/1.2.3.3 libidn/1.15</br>
+> Host: 127.0.0.1:8091</br>
+> Accept: */*</br>
+> Content-type: text/plain</br>
+> Content-Length: 18</br>
+> </br>
+< <strong>HTTP/1.1 204 No Content</strong></br>
+< Vary: Accept-Encoding</br>
+< Server: MochiWeb/1.1 WebMachine/1.7.3 (participate in the frantic)</br>
+< Date: Mon, 09 May 2011 13:11:38 GMT</br>
+< Content-Type: text/plain</br>
+< Content-Length: 0</br>
+< </br>
+* Connection #0 to host 127.0.0.1 left intact</br>
+* Closing connection #0</br>
+</code>
+</div>
+</div>
 "}
 

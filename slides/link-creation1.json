@@ -1,0 +1,50 @@
+{
+  "section":"Talking to Riak",
+  "header":"Link Creation",
+  "body": "
+<ul>
+<li>Links let us form loose relationships between entities</li>
+<li>We can \"walk links\" to easily access related information without having to build composite keys</li>
+<li><code>Blackadder</code> is superior to <code>Lt. George</code>, who is in turn superior to <code>Pvt. Baldrick</code></li>
+<li>Simply <strong>PUT</strong> the entity with the specially formatted <em>Link</em> header.
+<li>We'll use verbose logging so we can see everything that's going on</li>
+</ul>
+<p>The commands look like <a href=\"#command-inline\" rel=\"colorbox\" title=\"The cURL command\">this</a>, and the result looks like <a href=\"#result-inline\" rel=\"colorbox\" title=\"The cURL result\">this</a>.</p>
+<div style=\"display:none\">
+<div id=\"command-inline\" class=\"popup\">
+<ul>
+<li><code>curl -v -X PUT http://127.0.0.1:8093/riak/soldiers/blackadder -d \"Captain Edmund Blackadder\" -H \"Content-type: text/plain\" -H 'Link: &lt;/riak/soldiers/george>; riaktag=\"underling\"'</code></li>
+<li><code>curl -v -X PUT http://127.0.0.1:8093/riak/soldiers/george -d \"Lt. George\" -H \"Content-type: text/plain\" -H 'Link: &lt;/riak/soldiers/baldrick>; riaktag=\"underling\"'</code></li>
+<li><code>curl -v -X PUT http://127.0.0.1:8093/riak/soldiers/baldrick -d \"Pvt. Baldrick\" -H \"Content-type: text/plain\"</code></li>
+</div>
+<div id=\"result-inline\" class=\"popup\">
+<p>When we get <code>blackadder</code> we can see the link...</p>
+<code>
+* About to connect() to 127.0.0.1 port 8092 (#0)<br/>
+*   Trying 127.0.0.1... connected<br/>
+* Connected to 127.0.0.1 (127.0.0.1) port 8092 (#0)<br/>
+> GET /riak/soldiers/blackadder HTTP/1.1<br/>
+> User-Agent: curl/7.19.5 (x86_64-pc-linux-gnu) libcurl/7.19.5 OpenSSL/0.9.8g zlib/1.2.3.3 libidn/1.15<br/>
+> Host: 127.0.0.1:8092<br/>
+> Accept: */*<br/>
+> <br/>
+< HTTP/1.1 200 OK<br/>
+< X-Riak-Vclock: a85hYGBgzmDKBVIsLHWrpmUwJTLmsTJwpdgc54MJP15QDRUummwLE2ZrTmIRClJClsgCAA==<br/>
+< Vary: Accept-Encoding<br/>
+< Server: MochiWeb/1.1 WebMachine/1.7.3 (participate in the frantic)<br/>
+< <em>Link: &lt;/riak/soldiers/george&gt;; riaktag=\"underling\", &lt;/riak/soldiers&gt;; rel=\"up\"</em><br/>
+< Last-Modified: Tue, 10 May 2011 10:46:10 GMT<br/>
+< ETag: \"5RS859GjVP6EXlOiHeMebk\"<br/>
+< Date: Tue, 10 May 2011 10:52:54 GMT<br/>
+< Content-Type: text/plain<br/>
+< Content-Length: 25<br/>
+< <br/>
+* Connection #0 to host 127.0.0.1 left intact<br/>
+* Closing connection #0<br/>
+Captain Edmund Blackadder
+</code>
+</div>
+</div>
+"}
+
+

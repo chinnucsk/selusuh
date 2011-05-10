@@ -2,7 +2,7 @@
   "section":"Talking to Riak",
   "header":"REST API",
   "body": "
-<p><code>http://{host}:{port}/riak/{bucket}/{key}/{link,params,here}/{more,link,params}/...</code></p>
+<p><code>http://{host}:{port}/riak/{bucket}/{key}/</code></p><br/>
 <ul>
 <li><code>PUT</code> - when you know the <code>key</code> of the value to write (inserts and updates)</li>
 <li><code>POST</code> - when you don't know the <code>key</code> and you want Riak to create one (URI returned in the response headers)</li>
