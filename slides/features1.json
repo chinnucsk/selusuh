@@ -6,17 +6,17 @@
 <li>Schemaless</li>
 <li>Stores any kind of data</li>
 <li>Extremely configurable</li>
-<li>REST & PBC interfaces</li>
+<li>REST & PBC interfaces with drivers/clients in many languages</li>
 <li>Link walking</li>
 <li>Map/reduce</li>
-<li>Web apps</li>
+<li>Riak Search - full-text searching</li>
+<li>Secondary Indexes <strong>*** NEW ***</strong></li>
 <li><strong>Open source</strong> (with a paid Enterprise version)</li>
 </ul>
 <br/>
 <p>Cool, but not covered here...</p>
 <ul>
 <li>Streaming Map/reduce</li>
-<li>Riak Search - full-text searching</li>
 <li>Luwak - large object storage</li>
 </ul>
 "

@@ -6,15 +6,14 @@
 <li>What features does it have?</li>
 <li>What is it made of?</li>
 <li>How does it work?</li>
-<li>How do I talk to it?</li>
-<li>How do I query it?</li>
+<li>How do I interact with it?</li>
 <li>Sample applications</li>
 <li>How do I get started?</li>
 </ul></li>
 <li>What's <u>not</u> on ...
 <ul>
 <li>Comparisons to other NoSQL stores</li>
-<li>Preaching that NoSQL is the ducks nuts</li>
+<li>Preaching that NoSQL is better than RDBMS</li>
 </ul>
 </li>
 </ul>"
