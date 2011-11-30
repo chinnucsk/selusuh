@@ -1,0 +1,15 @@
+{
+  "section":"Why Erlang?",
+  "header":"Erlang - Reliability",
+  "body": "
+<ul>
+<li>Erlang was created to help build fault-tolerant, hot-upgradable systems because Ericsson can't afford fines for switch outages! <br/><strong>- Riak <em>Hates</em> Outages</strong></li>
+<li>Many lightweight processes (some say 'Green Threads')<ul>
+<li>Workers - grunts doing the work</li>
+<li>Supervisors - keeping the workers going even after failure, restarting if necessary</li>
+</ul><strong>- Riak <em>Loves</em> Processes</strong></li>
+<li>Hot-code swaps - patching and upgrading on the fly <br/><strong>- Riak <em>Loves</em> Uptime</strong></li>
+</ul>
+"}
+
+

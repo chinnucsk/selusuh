@@ -1,0 +1,14 @@
+{
+  "section":"Why Erlang?",
+  "header":"Erlang - Concurrency",
+  "body": "
+<ul>
+<li>A single Erlang VM can handle millions of processes if required</li>
+<li>Erlang VM schedules processes onto all available cores</li>
+<li>Any <em>proper</em> Erlang application can make use of all cores without special effort</li>
+<li>No need to fight with locks, mutexes, etc during development</li>
+<li><strong>Riak <em>Loves</em> Concurrency (making the most of the resources available)</strong></li>
+</ul>
+"}
+
+

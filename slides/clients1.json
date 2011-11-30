@@ -16,7 +16,7 @@
 <li>Node.js - REST</li>
 </ul></li>
 <li>There are many other non-official clients<ul>
-<li>I'm currently working on a .NET PBC Client</li>
+<li>&lt;shamelessPlug&gt;<br/><a href='http://corrugatediron.org/'>CorrugatedIron</a> - <em>the</em> .NET client for Riak<br/>&lt;/shamelessPlug&gt;</li>
 </ul>
 "
 }

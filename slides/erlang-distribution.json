@@ -1,0 +1,17 @@
+{
+  "section":"Why Erlang?",
+  "header":"Erlang - Distribution",
+  "body": "
+<ul>
+<li>Erlang VM has built-in support for distribution</li>
+<li>Processes communicate via messages built on primitives that remain the same regardless of the target node</li>
+<li>Distribution of work can happen by simply addressing the messages to processes on different nodes</li>
+<li>Development of distributed systems like Riak is drastically simplified thanks to these features<ul>
+<li>No extra libs</li>
+<li>Inter-application comms is a breeze</li>
+</ul></li>
+<li><strong>Riak <em>Loves</em> Distribution</strong></li>
+</ul>
+"}
+
+

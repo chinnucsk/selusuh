@@ -1,0 +1,14 @@
+{
+  "section":"Why Erlang?",
+  "header":"Erlang - Applications",
+  "body": "
+<ul>
+<li>Any number of separate 'applications' can co-exist/run in a single Erlang VM</li>
+<li>Each application (and its dependencies) can be started, stopped, updated independently</li>
+<li>Erlang systems are made up of many individual applications, resulting in a very modular architecture</li>
+<li>Erlang systems tend not to be inflexible, monolithic behemoths</li>
+<li><strong>Riak <em>Loves</em> Modularity</strong></li>
+</ul>
+"}
+
+

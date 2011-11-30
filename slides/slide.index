@@ -32,5 +32,9 @@ map-reduce6.json
 gotchas1.json
 clients1.json
 web-apps1.json
+erlang-reliability.json
+erlang-concurrency.json
+erlang-distribution.json
+erlang-applications.json
 where-to-next1.json
 thanks-questions.json
