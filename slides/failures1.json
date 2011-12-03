@@ -1,6 +1,6 @@
 {
   "section":"Node movement?",
-  "header":"What if a node is added or removed?",
+  "header":"Adding/removing nodes",
   "body":"
 <ul>
 <li><strong><a href=\"#consistent-hashing-inline\" rel=\"colorbox\" title=\"Definition courtesy of Wikipedia\">Consistent Hashing</a></strong> is used to limit the effects of keys being reshuffled too much when nodes are added/removed (ie. The Ring is modified)</li>

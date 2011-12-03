@@ -7,7 +7,7 @@
 <li>Adding and removing nodes is incredibly easy</li>
 </ul>
 <li>\"Operationally <strong>boring</strong>\"<ul>
-<li>Depending on configuration/application requirements, a huge amount of nodes can die before Riak starts to show errors (just ask <a href=\"riak_prod.png\" rel=\"colorbox\" title=\"Julio Tweeting about Riak in Production\">Julio Capote</a>)</li>
+<li>Depending on configuration, a huge amount of nodes can die before Riak starts to show errors (just ask <a href=\"riak_prod.png\" rel=\"colorbox\" title=\"Julio Tweeting about Riak in Production\">Julio Capote</a>)</li>
 <li>In essence, a perfect meta-storm of perfect storms is required to cause catastrophic failure</li>
 </ul>
 </li>

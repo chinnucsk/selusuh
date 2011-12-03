@@ -2,22 +2,19 @@
   "section":"What features does it have?",
   "header":"Killer Features",
   "body": "
+<p> .. as of v1.0.2</p>
 <ul>
-<li>Schemaless and Stores any kind of data</li>
+<li>Schemaless and stores any kind of data</li>
 <li>Extremely configurable (even per-request)</li>
 <li>REST & PBC interfaces with drivers/clients in many languages</li>
 <li>Link walking</li>
-<li>Map/reduce</li>
+<li>Map/reduce (via Riak Pipes)</li>
+<li>Luwak - large object storage</li>
 <li>Riak Search - full-text searching</li>
 <li>Secondary Indexes <strong>*** NEW ***</strong></li>
 <li><strong>Open source</strong> (with a paid Enterprise version)</li>
 </ul>
 <br/>
-<p>Cool, but not covered here...</p>
-<ul>
-<li>Streaming Map/reduce</li>
-<li>Luwak - large object storage</li>
-<li>Riak Pipes</li>
-</ul>
+<p>Not all of these will be covered.</p>
 "
 }
