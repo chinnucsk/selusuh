@@ -10,7 +10,7 @@
 <li>Amazingly quick</li>
 <li>Mixture of Erlang and C</li>
 </ul>
-<li>Other options are:<br/>ets, dets, fs, innostore, gb_trees and more</li>
+<li>Many other options eg:<br/>leveldb, innostore, gb_trees and more</li>
 <li>Easy to build your own and plug it in (if that's your thing)</li>
 </ul>
 "

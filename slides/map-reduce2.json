@@ -7,6 +7,9 @@
 <li>Reduce - take the results of the map phase and combine them into a single result</li>
 <li>Any node can coordinate the M/R job and send map-step eval requests to nodes where the data lives</li>
 <li>Reduce steps are done on the coordinating node</li>
-<li>Ubiquitous example: word counts</li>
+<li>M/R phases can be written in JS or Erlang</li>
+<li>Map inputs can be<ul><li>Bucket name</li><li>Bucket and Key</li><li>Bucket, Key and arg</li></ul>
+</li>
+<li><em>Way more detail, not enough time!</em></li>
 </ul>
 "}

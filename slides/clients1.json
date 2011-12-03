@@ -8,12 +8,7 @@
 <li>REST and PBC not at feature parity</li>
 <li>Existing language-specific clients
 <ul>
-<li>Erlang - PBC and REST</li>
-<li>Java - PBC and REST</li>
-<li>PHP - REST</li>
-<li>Javascript - REST</li>
-<li>Ruby - REST and PBC</li>
-<li>Node.js - REST</li>
+<li>Erlang, Java, PHP, Ruby, Node.js</li>
 </ul></li>
 <li>There are many other non-official clients<ul>
 <li>&lt;shamelessPlug&gt;<br/><a href='http://corrugatediron.org/'>CorrugatedIron</a> - <em>the</em> .NET client for Riak<br/>&lt;/shamelessPlug&gt;</li>

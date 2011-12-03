@@ -9,7 +9,7 @@
 <li>Where does Riak sit with respect to other NoSQL DBs? Let's <a href=\"nosql.png\" rel=\"colorbox\" title=\"I Visual Guide to NoSQL Databases - Courtesy of Nathan Hurst\">see</a></li>
 <li>Consistency is still <em>very</em> quick (don't be scared, you're probably already using eventual consistency!)</li>
 <li>\"Buckets\" and \"Keys\"<ul>
-<li>think \"Tables\" and \"Primary keys\" in RDBMS.. kinda.. sorta</li></ul></li>
+<li>think \"Tables\" and \"Primary keys\" in RDBMS.. but not really</li></ul></li>
 <li>\"Links\"<ul>
 <li>think \"Foreign keys\" in RDBS... well, not <em>really</em></ul></li>
 <li>Pre- and Post-commit Hooks</li>

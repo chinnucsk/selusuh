@@ -10,6 +10,4 @@
 <li><strong>tag</strong> - the name of the link tag to walk, or '<strong>_</strong>' (any)</li>
 <li><strong>keep</strong> - specifies whether to return a result for this link phase, or '<strong>_</strong>' (0)</li>
 </ul>
-<br/>
-<p>Time to hit the console for a brief demo...</p>
 "}
